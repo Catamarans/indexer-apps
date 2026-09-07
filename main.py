@@ -57,7 +57,11 @@ async def discovery_feed():
 @app.get("/", response_class=HTMLResponse)
 async def home():
     return """
-    <html><body style="font-family: Arial, sans-serif; padding: 20px;">
+    <html>
+    <head>
+        <meta name="google-site-verification" content="APnjJk6kdRRtMsXLlIt9TyIj9d9CFjWUONDvmh2C1N8" />
+    </head>
+    <body style="font-family: Arial, sans-serif; padding: 20px;">
     <h1>Certs Expert - Indexing Control Panel</h1>
     <form action="/add" method="get">
       <input type="text" name="url" placeholder="Enter backlink URL (e.g., https://...)" style="width:400px; padding: 8px;" required>
